@@ -1,0 +1,295 @@
+*{
+  font-family: "Kanit";
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.body{
+  overflow-x: hidden;
+}
+
+.navbar-brand{
+  font-size: 28px;
+}
+
+.aument-transi{
+  transition: all .3s;
+}
+
+.aument-transi:hover{
+    transform: scale(1.04);
+    transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: blur(50);
+}
+
+.botao1{
+  transition: width .5s;
+}
+
+.botao1:hover{
+  transform: scale(1.01);
+}
+
+.card{
+  border: 0;
+  transition: all 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.nav-item{
+  transition: all 0.5s;
+}
+
+.nav-item:hover{
+  transform: scale(1.05);
+}
+
+.sem-sublinhado{
+  text-decoration: none;
+}
+
+
+
+
+
+.l{
+  transform: scale(1.05);
+
+}
+
+.my-icon {
+  color: black;
+  transition: color 0.5s; /* Define a duração da transição */
+}
+
+.my-icon:hover {
+  color: #c3c3dd; /* Cor ao passar o mouse */
+}
+
+.darken-on-hover {
+  transition: filter 0.5s; /* Define a duração da transição */
+}
+
+.darken-on-hover:hover {
+  filter: brightness(0.7); /* Reduz o brilho para 70% ao passar o mouse */
+}
+
+.black-icon {
+  color: black !important;
+}
+
+.btn-secondary{
+  color: #9292a3;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.dropdown-menu.fadeInDown {
+  animation: fadeInDown 0.3s ease-in-out;
+}
+
+.dropdown-menu.fadeOutUp {
+  animation: fadeOutUp 0.3s ease-in-out;
+}
+
+.navbar-collapse a {
+  color: #fefefe; /* Define a cor do texto para preto */
+}
+
+.card-link{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row; /* Em telas maiores, os ícones ficam em uma linha */
+  }
+}
+
+.contact {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0; /* Remove o padding */
+  border-radius: 0; /* Remove o arredondamento */
+  box-shadow: none; /* Remove a sombra */
+  background-color: transparent; /* Remove o fundo */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact input[type="tel"]:focus,
+.contact textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.contact br {
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact input[type="tel"],
+  .contact textarea {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .contact button {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact input[type="tel"],
+  .contact textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .contact button {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+.contact__form {
+  max-width: 600px; /* Largura máxima do formulário */
+  margin: 0 auto; /* Centraliza o formulário na página */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #ffffff; /* Cor de fundo do formulário */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contact__form p {
+  font-size: 1.2em; /* Tamanho da fonte da descrição */
+  margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+  color: #333; /* Cor do texto */
+}
+.contact__form {
+  max-width: 600px; /* Largura máxima do formulário */
+  margin: 0 auto; /* Centraliza o formulário na página */
+  padding: 20px; /* Espaçamento interno */
+  background-color: transparent; /* Remove a cor de fundo */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: none; /* Remove a sombra */
+}
+
+.contact__form p {
+  font-size: 1.2em; /* Tamanho da fonte da descrição */
+  margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+  color: #333; /* Cor do texto */
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form input[type="tel"],
+.contact__form textarea {
+  width: 100%; /* Largura total dos campos */
+  padding: 12px; /* Espaçamento interno dos campos */
+  margin-bottom: 15px; /* Espaço abaixo de cada campo */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  transition: border-color 0.3s; /* Transição suave para a cor da borda */
+  background-color: transparent; /* Fundo transparente para os campos */
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  border-color: #007bff; /* Cor da borda ao focar */
+  outline: none; /* Remove a borda padrão ao focar */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra ao focar */
+}
+
+.contact__form button {
+  width: 100%; /* Largura total do botão */
+  padding: 14px; /* Espaçamento interno do botão */
+  background-color: hsl(210, 67%, 1%); /* Cor de fundo do botão */
+  color: #ffffff; /* Cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.contact__form button:hover {
+  background-color: #5c5f63; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.contact__form textarea {
+  resize: none; /* Impede o redimensionamento do textarea */
+}
